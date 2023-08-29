@@ -7,8 +7,8 @@ from concurrent.futures import ThreadPoolExecutor
 from ccxt.base.exchange import Exchange as ProExchange
 from ccxt.base.exchange import Exchange as SyncExchange
 from ccxt.base.errors import RateLimitExceeded, ExchangeNotAvailable, RequestTimeout
-from order_book_recorder.depth import Side, calculate_price_at_depths
-from order_book_recorder.utils import to_async
+from order_book.depth import Side, calculate_price_at_depths
+from order_book.utils import to_async
 # Create a thread pool where sync exchange APIs will be executed
 sync_exchange_thread_pool = ThreadPoolExecutor()
 

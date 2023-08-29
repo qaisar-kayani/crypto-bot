@@ -11,9 +11,9 @@ from typing import Optional, List
 import redis
 from redistimeseries.client import Client
 
-from order_book_recorder import config
-from order_book_recorder.side import Side
-from order_book_recorder.utils import to_async
+from order_book import config
+from order_book.side import Side
+from order_book.utils import to_async
 
 logger = logging.getLogger(__name__)
 

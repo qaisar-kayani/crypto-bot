@@ -1,4 +1,4 @@
-from order_book_recorder import telegram
+from order_book import telegram
 
 
 async def notify(title, msg):

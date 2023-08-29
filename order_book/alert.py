@@ -6,8 +6,8 @@ from asyncio import create_task
 from dataclasses import dataclass
 from typing import Dict, List, Optional
 
-from order_book_recorder.notify import notify
-from order_book_recorder.opportunity import Opportunity
+from order_book.notify import notify
+from order_book.opportunity import Opportunity
 
 
 logger = logging.getLogger(__name__)

@@ -2,17 +2,17 @@ import datetime
 import logging
 import time
 import asyncio
-from order_book_recorder.watcher import Watcher
-from order_book_recorder.alert import update_alerts
-from order_book_recorder import telegram, recorder, config
-from order_book_recorder.config import setup_exchanges, MARKETS, BTC_DEPTHS, ETH_DEPTHS, MARKET_DEPTHS, ALERT_THRESHOLD, \
+from order_book.watcher import Watcher
+from order_book.alert import update_alerts
+from order_book import telegram, recorder, config
+from order_book.config import setup_exchanges, MARKETS, BTC_DEPTHS, ETH_DEPTHS, MARKET_DEPTHS, ALERT_THRESHOLD, \
     RETRIGGER_THRESHOLD
-from order_book_recorder.logger import setup_logging
-from order_book_recorder.logtable import refresh_log_messages, BufferedOutputHandler
-from order_book_recorder.notify import notify
-from order_book_recorder.opportunity import Opportunity, find_opportunities
-from order_book_recorder.pricetable import refresh_live
-from order_book_recorder.recorder import record_depths, redis_updates
+from order_book.logger import setup_logging
+from order_book.logtable import refresh_log_messages, BufferedOutputHandler
+from order_book.notify import notify
+from order_book.opportunity import Opportunity, find_opportunities
+from order_book.pricetable import refresh_live
+from order_book.recorder import record_depths, redis_updates
 from asyncio import create_task
 from collections import defaultdict
 from typing import Dict, List

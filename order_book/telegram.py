@@ -3,7 +3,7 @@ import logging
 
 import aiohttp
 
-from order_book_recorder import config
+from order_book import config
 
 
 logger = logging.getLogger(__name__)

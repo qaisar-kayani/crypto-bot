@@ -2,7 +2,7 @@ from typing import List, Dict
 
 from rich.table import Table
 
-from order_book_recorder.watcher import Watcher
+from order_book.watcher import Watcher
 
 
 def refresh_live(exchanges: dict, markets: List[str], watchers_by_market: Dict[str, Dict[str, Watcher]]) -> Table:
