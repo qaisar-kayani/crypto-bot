@@ -1,4 +1,4 @@
-# Arbitrage opportunity tracker
+#  Crypto
 
 This Python application listens to centralised cryptocurrency exchange orderbooks to track arbitrage opportunities between exchanges.
 
